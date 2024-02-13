@@ -1,2 +1,13 @@
 @import './common';
-@import './example';
+@import './utils/vars';
+@import './utils/visuallyHidden';
+
+@import './layouts/header';
+
+@import './layouts/hero-section';
+@import './layouts/achievements-section';
+@import './layouts/codex-section';
+
+@import './layouts/footer';
+@import './layouts/modal-submit';
+@import './layouts/modal-confirmation';
