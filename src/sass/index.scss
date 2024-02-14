@@ -1,7 +1,8 @@
-@import './utils/fonts';
-@import './common';
+@import './base/common';
 @import './utils/vars';
-@import './utils/container';
+@import './base/fonts';
+@import './base/container';
+
 @import './utils/visuallyHidden';
 @import './utils/switcher';
 

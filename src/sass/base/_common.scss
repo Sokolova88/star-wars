@@ -1,0 +1,49 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: var(--fontMain);
+  color: var(--darkTheme-accent);
+  background-color: var(--darkTheme-sectionBg);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+
+button,
+a {
+  cursor: pointer;
+}
