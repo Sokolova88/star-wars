@@ -1,0 +1,8 @@
+.header--inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 32px 0;
+  background-color: var(--darkTheme-mainBg);
+}
