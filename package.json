@@ -23,21 +23,8 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
-    "parcel-optimizer-imagemin": "^1.0.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "parcel-optimizer-imagemin": {
-    "imagemin-gifsicle": {
-      "optimizationLevel": 3
-    },
-    "imagemin-mozjpeg": {
-      "quality": 80
-    },
-    "imagemin-svgo": {},
-    "imagemin-webp": {},
-    "imagemin-optipng": {},
-    "imagemin-pngquant": false
-  }
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }

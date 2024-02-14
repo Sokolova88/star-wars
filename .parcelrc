@@ -5,11 +5,5 @@
   "reporters": [
     "...",
     "parcel-reporter-clean-dist"
-  ],
-  "optimizers": {
-    "*.{gif,jpeg,jpg,png,svg,webp}": [
-      "parcel-optimizer-imagemin",
-      "..."
-    ]
-  }
+  ]
 }
