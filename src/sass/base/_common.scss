@@ -1,8 +1,17 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: var(--fontMain);
-  color: var(--darkTheme-accent);
+  color: var(--darkTheme-mainText);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
   background-color: var(--darkTheme-sectionBg);
 }
 
@@ -46,4 +55,8 @@ a {
 button,
 a {
   cursor: pointer;
+}
+
+.icon {
+  fill: currentColor;
 }
