@@ -1,0 +1,110 @@
+.hero-section {
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  background-image: url('../images/bg-dark.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 136px;
+  overflow: hidden;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/bg-dark@2x.png');
+  }
+}
+
+.hero {
+  position: relative;
+
+  &--inner-column {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    min-height: 506px;
+  }
+
+  &--wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 46px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.92px;
+    color: var(--darkTheme-accent);
+  }
+
+  &-list {
+    margin-bottom: 24px;
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--darkTheme-accent);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__button {
+    @extend %button;
+
+    background-color: var(--darkTheme-accent);
+    color: var(--darkTheme-mainBg);
+    transition: background-color var(--duration) var(--timingFunction),
+      color var(--duration) var(--timingFunction),
+      outline var(--duration) var(--timingFunction);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--darkTheme-accent);
+      outline: 2px solid var(--darkTheme-accent);
+    }
+  }
+
+  &__text--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-grow: 1;
+    width: 100%;
+  }
+}
+
+.hero__img--darth {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  // z-index: -1;
+}
+
+.hero__img--star {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}

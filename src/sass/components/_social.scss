@@ -1,0 +1,24 @@
+.social-list {
+  position: absolute;
+  top: 11px;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  &__link {
+    transition: transform var(--duration) var(--timingFunction);
+  }
+  &__icon {
+    transform: scale(1);
+    color: var(--darkTheme-accent);
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    transform: scale(1.1);
+  }
+}
