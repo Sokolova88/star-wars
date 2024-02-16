@@ -1,0 +1,15 @@
+.footer {
+  padding: 60px 0;
+  text-align: center;
+
+  &__sacrament {
+    max-width: 755px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__icon {
+    color: var(--darkTheme-accent);
+  }
+}
