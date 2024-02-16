@@ -3,15 +3,16 @@
 @import './base/fonts';
 @import './base/container';
 
+@import './utils/placeholders';
 @import './utils/visuallyHidden';
-@import './utils/switcher';
+
+@import './components/switcher';
+@import './components/social';
+@import './components/modal-submit';
+@import './components/modal-confirmation';
 
 @import './layouts/header';
-
 @import './layouts/hero-section';
 @import './layouts/achievements-section';
 @import './layouts/codex-section';
-
 @import './layouts/footer';
-@import './layouts/modal-submit';
-@import './layouts/modal-confirmation';
