@@ -1,0 +1,39 @@
+<div class="modal-overlay">
+  <div class="modal">
+    <button type="button" class="modal__close modal__close-btn">
+      <svg class="modal__close-icon icon" width="14" height="14">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__title">
+      <span class="accentColor">Принесення клятви вірності</span><br />
+      позбавить тебе від тягарів моралі та етики
+    </p>
+    <form class="form-submit">
+      <label class="form-field">
+        <span class="form-field__label">Ім'я</span>
+        <input
+          class="form-field__input"
+          type="text"
+          name="Ім'я"
+          placeholder="Дарт Вейдер"
+          minlength="2"
+          required
+        />
+      </label>
+
+      <label class="form-field">
+        <span class="form-field__label">Email</span>
+        <input
+          class="form-field__input"
+          type="email"
+          name="Email"
+          placeholder="starwars@mail.com"
+          required
+        />
+      </label>
+
+      <button class="button__submit" type="submit">Принести клятву</button>
+    </form>
+  </div>
+</div>
