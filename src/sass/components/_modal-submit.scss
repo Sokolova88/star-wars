@@ -11,6 +11,7 @@
   opacity: 1;
   visibility: visible;
   margin: 0 auto;
+  transition: opacity var(--duration) var(--timingFunction);
 }
 
 .modal-overlay__hidden {
@@ -29,6 +30,12 @@
   padding: 40px 84px;
   border-radius: 4px;
   background-color: var(--darkTheme-sectionBg);
+  // transform: scale(1);
+  // transition: transform var(--duration) var(--timingFunction);
+}
+
+.modal__hidden {
+  // transform: scale(0);
 }
 
 .modal__close {
@@ -109,4 +116,17 @@
 .button__submit {
   @extend %button;
   margin-top: 32px;
+}
+
+//
+// MODAL SUCCESS STYLES
+//
+
+.modal-success {
+  text-align: center;
+
+  &__icon {
+    margin-top: 32px;
+    color: var(--darkTheme-accent);
+  }
 }
