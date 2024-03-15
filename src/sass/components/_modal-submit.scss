@@ -27,6 +27,7 @@
   transform: translate(-50%, -50%);
   max-width: 600px;
   width: 100%;
+  min-height: 390px;
   padding: 40px 84px;
   border-radius: 4px;
   background-color: var(--darkTheme-sectionBg);
@@ -128,5 +129,9 @@
   &__icon {
     margin-top: 32px;
     color: var(--darkTheme-accent);
+  }
+
+  &__title {
+    margin-bottom: 112px;
   }
 }
