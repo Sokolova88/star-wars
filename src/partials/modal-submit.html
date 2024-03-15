@@ -1,6 +1,9 @@
-<div class="modal-overlay modal-overlay__hidden">
+<div class="modal-overlay modal-overlay__hidden modal-submit--js">
   <div class="modal modal__hidden">
-    <button type="button" class="modal__close modal__close-btn">
+    <button
+      type="button"
+      class="modal__close modal__close-btn modal__close-btn--js"
+    >
       <svg class="modal__close-icon icon" width="14" height="14">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
@@ -9,7 +12,7 @@
       <span class="accentColor">Принесення клятви вірності</span><br />
       позбавить тебе від тягарів моралі та етики
     </p>
-    <form class="form-submit">
+    <form class="form-submit modal-form--js">
       <label class="form-field">
         <span class="form-field__label">Ім'я</span>
         <input
@@ -36,13 +39,18 @@
       <button class="button__submit" type="submit">Принести клятву</button>
     </form>
   </div>
+</div>
+<div class="modal-overlay modal-overlay__hidden modal-success--js">
   <div class="modal modal-success modal__hidden">
-    <button type="button" class="modal__close modal__close-btn">
+    <button
+      type="button"
+      class="modal__close modal__close-btn modal__close-btn--js"
+    >
       <svg class="modal__close-icon icon" width="14" height="14">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <p class="modal__title">
+    <p class="modal__title modal-success__title">
       <span class="accentColor">Клятва принесена</span>
     </p>
     <p class="modal__descr">
