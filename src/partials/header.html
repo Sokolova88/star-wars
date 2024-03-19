@@ -1,19 +1,21 @@
 <header class="header">
   <div class="container header--inner">
     <div class="logo logo--wrap">
-      <img
-        src="./images/logo.svg"
-        alt="Логотип компанії Start Wars"
-        width="72"
-        height="32"
+      <a
+        href="./"
+        aria-label="Посилання на головну сторінку Star Wars"
         class="logo__icon"
-      />
+      >
+        <svg class="social-list__icon icon" width="72" height="30">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
     </div>
 
     <div class="switcher">
       <button class="switcher--theme-name">Dark</button>
       <label class="switch">
-        <input type="checkbox" id="theme-switch" class="switch__input" />
+        <input type="checkbox" class="switch__input theme-switch--js" />
         <span class="switch__slider switch__slider--round"></span>
       </label>
       <button class="switcher--theme-name">Light</button>
