@@ -6,8 +6,8 @@
   padding: 16px 32px;
   border-radius: 31px;
 
-  background-color: var(--darkTheme-accent);
-  color: var(--darkTheme-mainBg);
+  background-color: var(--theme-accent);
+  color: var(--theme-mainBg);
 
   transition: background-color var(--duration) var(--timingFunction),
     color var(--duration) var(--timingFunction),
@@ -16,7 +16,7 @@
   &:hover,
   &:focus {
     background-color: transparent;
-    color: var(--darkTheme-accent);
-    outline: 2px solid var(--darkTheme-accent);
+    color: var(--theme-accent);
+    outline: 2px solid var(--theme-accent);
   }
 }

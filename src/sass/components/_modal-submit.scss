@@ -6,7 +6,7 @@
   height: 100%;
   z-index: 10;
   padding: 80px 20px;
-  background-color: var(--darkTheme-overlay);
+  background-color: var(--theme-overlay);
   overflow-y: auto;
   opacity: 1;
   visibility: visible;
@@ -30,7 +30,7 @@
   min-height: 390px;
   padding: 40px 84px;
   border-radius: 4px;
-  background-color: var(--darkTheme-sectionBg);
+  background-color: var(--theme-sectionBg);
   // transform: scale(1);
   // transition: transform var(--duration) var(--timingFunction);
 }
@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: center;
 
-  color: var(--darkTheme-mainText);
+  color: var(--theme-mainText);
   border: none;
   padding: 0;
   background-color: transparent;
@@ -64,7 +64,7 @@
 .modal__close:hover .modal__close-icon,
 .modal__close:focus .modal__close-icon {
   transform: scale(1.1);
-  color: var(--darkTheme-accent);
+  color: var(--theme-accent);
 }
 
 .modal__title {
@@ -99,19 +99,19 @@
   &__input {
     padding: 8px 20px;
     background-color: transparent;
-    border: 1px solid var(--darkTheme-mainText);
+    border: 1px solid var(--theme-mainText);
     border-radius: 4px;
     outline: none;
-    color: var(--darkTheme-accent);
+    color: var(--theme-accent);
   }
 }
 
 .form-field:focus-within {
-  color: var(--darkTheme-accent);
+  color: var(--theme-accent);
 }
 
 .form-field:focus-within .form-field__input {
-  border-color: var(--darkTheme-accent);
+  border-color: var(--theme-accent);
 }
 
 .button__submit {
@@ -128,7 +128,7 @@
 
   &__icon {
     margin-top: 32px;
-    color: var(--darkTheme-accent);
+    color: var(--theme-accent);
   }
 
   &__title {
