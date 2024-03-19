@@ -1,6 +1,6 @@
-.codex {
+.codex-section {
   padding: 86px 0;
-  background-color: var(--darkTheme-mainBg);
+  background-color: var(--theme-mainBg);
   background-image: url('../images/bg-dark.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -16,6 +16,17 @@
 
   @media screen and (min-width: $tablet) {
     padding: 186px 0;
+  }
+
+  &--light {
+    background-image: url('../images/bg-light.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/bg-light@2x.png');
+    }
   }
 }
 
