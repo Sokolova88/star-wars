@@ -3,17 +3,11 @@
   --fontMain: 'Montserrat', sans-serif;
 
   // Colors
-  --darkTheme-accent: #ffc700;
-  --darkTheme-mainText: #ffffff;
-  --darkTheme-mainBg: #060803;
-  --darkTheme-sectionBg: #222527;
-  --darkTheme-overlay: rgba(255, 255, 255, 0.4);
-
-  --lightTheme-accent: #4b526a;
-  --lightTheme-mainText: #4b526a;
-  --lightTheme-mainBg: #ffffff;
-  --lightTheme-sectionBg: #ebebeb;
-  --lightTheme-overlay: rgba(54, 49, 49, 0.4);
+  --theme-accent: #ffc700;
+  --theme-mainText: #ffffff;
+  --theme-mainBg: #060803;
+  --theme-sectionBg: #222527;
+  --theme-overlay: rgba(255, 255, 255, 0.4);
 
   //Animation Properties
   --duration: 300ms;
