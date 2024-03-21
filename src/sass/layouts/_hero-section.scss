@@ -93,16 +93,38 @@
   }
 }
 
+.hero__text--light {
+  color: var(--theme-heroText);
+  @media screen and (max-width: 899px) {
+    display: none;
+  }
+}
+
 .hero__img--star {
   position: absolute;
   bottom: -50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.4;
+
+  @media screen and (max-width: $tablet) {
+    width: 400px;
+  }
 }
 
 .hero__img--darth {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  @media screen and (min-width: 900px) {
+    width: 500px;
+  }
+  @media screen and (min-width: $laptop) {
+    width: 668px;
+  }
 }
