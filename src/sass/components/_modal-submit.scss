@@ -18,25 +18,34 @@
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+
+  & > .modal {
+    transform: scale(0);
+    @media screen and (min-width: calc($tablet)) {
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   min-height: 390px;
-  padding: 40px 84px;
+  margin: 0 auto;
+  padding: 20px 44px;
   border-radius: 4px;
   background-color: var(--theme-sectionBg);
-  // transform: scale(1);
-  // transition: transform var(--duration) var(--timingFunction);
-}
+  transform: scale(1);
+  transition: transform var(--duration) var(--timingFunction);
 
-.modal__hidden {
-  // transform: scale(0);
+  @media screen and (min-width: calc($tablet)) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 600px;
+    padding: 40px 84px;
+  }
 }
 
 .modal__close {
@@ -79,6 +88,7 @@
 
 .form-submit {
   max-width: 430px;
+  margin: 0 auto;
   text-align: center;
 }
 
